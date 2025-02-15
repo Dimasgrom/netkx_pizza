@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>nektx pizza</title>
+        <link rel="stylesheet" href="/static/css/style_login.css">
+      </head>
+<body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+            <img id="logo" src="/static/photo/logo_pizza.png" alt="Логотип" />
+        </div>
+        <div class="header-main">
+            <ul class="nav-menu">
+                <li>
+                    <img src="/static/photo/599995.png" alt="Піца" />
+                    <span>Піца</span>
+                </li>
+                <li>
+                    <img src="/static/photo/free-icon-cola-7491338.png" alt="Напої" />
+                    <span>Напої</span>
+                </li>
+                <li>
+                    <img src="/static/photo/free-icon-promotions-11477766.png" alt="Акції" />
+                    <span>Акції</span>
+                </li>
+                <li id = "pizza-bulder">
+                    <img src="/static/photo/free-icon-pizza-99954.png" alt="Піца збери сам" />
+                    <span>Піца збери сам</span>
+                </li>
+            </ul>
+            <div  class="login">
+                <img id= "login" src="/static/photo/free-icon-profile-1250689.png" alt="Увійти" />
+                <span id= "login" >Увійти</span>
+            </div>
+        </div>
+        <div class="header-burger">
+            <span></span>
+        </div>
+    </nav>
+    </header>
+    <div class="main-logo-container">
+        <img src="/static/photo/logo_pizza.png" alt="Головне лого" class="main-logo">
+    </div>
+
+    <!-- Форма входа -->
+    <main class="login-wrapper">
+        <div class="login-container">
+            <div class="login-content">
+                <!-- Поля ввода -->
+                <div class="input-group">
+                    <div class="input-field">
+                        <img src="/static/photo/free-icon-profile-1250689.png" class="input-icon">
+                        <input type="text" id="login" placeholder="Логін" class="form-input">
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div class="input-field">
+                        <img src="/static/photo/free-icon-key-2443039.png" class="input-icon">
+                        <input type="password" id="password" placeholder="Пароль" class="form-input">
+                        <div class="underline"></div>
+                    </div>
+                </div>
+
+                <!-- Кнопка и чекбокс -->
+                <div class="form-controls">
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberCheck">
+                        <label for="rememberCheck">Запам'ятати мене</label>
+                    </div>
+                    <button class="signin-btn">Увійти</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/js/login.js"></script>
+</body>
+</html>

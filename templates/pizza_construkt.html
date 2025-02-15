@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nektx pizza</title>
+    <link rel="stylesheet" href="/static/css/styles_construkt.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <img id="logo" src="/static/photo/logo_pizza.png" alt="Логотип" />
+        </div>
+        <div class="header-main">
+          <ul class="nav-menu">
+            <li>
+              <img src="/static/photo/599995.png" alt="Піца" />
+              <span>Піца</span>
+            </li>
+            <li>
+              <img src="/static/photo/free-icon-cola-7491338.png" alt="Напої" />
+              <span>Напої</span>
+            </li>
+            <li>
+              <img src="/static/photo/free-icon-promotions-11477766.png" alt="Акції" />
+              <span>Акції</span>
+            </li>
+            <li>
+              <img id = "pizza-bulder"
+                src="/static/photo/free-icon-pizza-99954.png"
+                alt="Піца збери сам"
+              />
+              <span>Піца збери сам</span>
+            </li>
+          </ul>
+          <div class="login">
+            <img id= "login" src="/static/photo/free-icon-profile-1250689.png" alt="Увійти" />
+            <span>Увійти</span>
+          </div>
+        </div>
+        <div class="header-burger">
+          <span id= "login" ></span>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- Ліва частина -->
+      <div class="constructor-section">
+        <h1 class="section-title">Зроби сам</h1>
+
+        <!-- Розмір -->
+        <div class="option-group">
+          <h2 class="option-title">Розмір</h2>
+          <div class="size-buttons">
+            <button class="option-button" data-size="25" data-price="0">
+              25см
+            </button>
+            <button class="option-button" data-size="30" data-price="50">
+              30см
+            </button>
+            <button class="option-button" data-size="35" data-price="100">
+              35см
+            </button>
+          </div>
+        </div>
+
+        <!-- Бортики -->
+        <div class="option-group">
+          <h2 class="option-title">Бортики</h2>
+          <div class="size-buttons">
+              <button class="option-button" data-category="border" data-price="20">
+                  Звичайні
+              </button>
+              <button class="option-button" data-category="border" data-price="30">
+                  Сирні
+              </button>
+              <button class="option-button" data-category="border" data-price="40">
+                  Ковбасні
+              </button>
+          </div>
+      </div>
+
+        <!-- Соус -->
+        <div class="option-group">
+          <h2 class="option-title">Соус</h2>
+          <div class="ingredient-grid">
+            <div class="ingredient-card" data-category="sauce" data-price="29">
+              <img
+                src="/static/photo/soustomat3.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Томатний соус</div>
+              <div class="ingredient-price">29₴</div>
+            </div>
+            <div class="ingredient-card" data-category="sauce" data-price="29">
+              <img
+                src="/static/photo/sousvershk2.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Вершковий соус</div>
+              <div class="ingredient-price">29₴</div>
+            </div>
+            <div class="ingredient-card" data-category="sauce" data-price="29">
+              <img
+                src="/static/photo/barbekjusous2.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Барбекю соус</div>
+              <div class="ingredient-price">29₴</div>
+            </div>
+            <div class="ingredient-card" data-category="sauce" data-price="29">
+              <img
+                src="/static/photo/souskari2.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Карі соус</div>
+              <div class="ingredient-price">29₴</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Сир -->
+        <div class="option-group">
+          <h2 class="option-title">Сир</h2>
+          <div class="ingredient-grid">
+            <div class="ingredient-card" data-category="cheese" data-price="29">
+              <img
+                src="/static/photo/soustomat3 1.png"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Сир моцарела</div>
+              <div class="ingredient-price">29₴</div>
+            </div>
+            <div class="ingredient-card" data-category="cheese" data-price="29">
+              <img
+                src="/static/photo/chedr2.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Сир чедер</div>
+              <div class="ingredient-price">29₴</div>
+            </div>
+            <div class="ingredient-card" data-category="cheese" data-price="29">
+              <img
+                src="/static/photo/dorblue2.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Дор блю</div>
+              <div class="ingredient-price">29₴</div>
+            </div>
+            <div class="ingredient-card" data-category="cheese" data-price="29">
+              <img
+                src="/static/photo/parmigiano.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Пармезан</div>
+              <div class="ingredient-price">29₴</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- М'ясо -->
+        <div class="option-group">
+          <h2 class="option-title">М'ясо</h2>
+          <div class="ingredient-grid">
+            <div class="ingredient-card" data-category="meat" data-price="24">
+              <img
+                src="/static/photo/kolbaski22.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Мисливські ковбаски</div>
+              <div class="ingredient-price">24₴</div>
+            </div>
+            <div class="ingredient-card" data-category="meat" data-price="24">
+              <img
+                src="/static/photo/shinka.png"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Шинка</div>
+              <div class="ingredient-price">24₴</div>
+            </div>
+            <div class="ingredient-card" data-category="meat" data-price="24">
+              <img
+                src="/static/photo/cip.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Салямі</div>
+              <div class="ingredient-price">24₴</div>
+            </div>
+            <div class="ingredient-card" data-category="meat" data-price="24">
+              <img
+                src="/static/photo/bek.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Бекон</div>
+              <div class="ingredient-price">24₴</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Додатково -->
+        <div class="option-group">
+          <h2 class="option-title">Додатково</h2>
+          <div class="ingredient-grid">
+            <div class="ingredient-card" data-category="extra" data-price="16">
+              <img
+                src="/static/photo/tomat6.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Свіжий томат</div>
+              <div class="ingredient-price">16₴</div>
+            </div>
+            <div class="ingredient-card" data-category="extra" data-price="16">
+              <img
+                src="/static/photo/chesnok2.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Часник</div>
+              <div class="ingredient-price">16₴</div>
+            </div>
+            <div class="ingredient-card" data-category="extra" data-price="16">
+              <img
+                src="/static/photo/ogirok_kvash.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Солоний огірок</div>
+              <div class="ingredient-price">16₴</div>
+            </div>
+            <div class="ingredient-card" data-category="extra" data-price="16">
+              <img
+                src="/static/photo/luk2.png"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Червона цибуля</div>
+              <div class="ingredient-price">16₴</div>
+            </div>
+            <div class="ingredient-card" data-category="extra" data-price="16">
+              <img
+                src="/static/photo/rukola.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Рукола</div>
+              <div class="ingredient-price">16₴</div>
+            </div>
+            <div class="ingredient-card" data-category="extra" data-price="16">
+              <img
+                src="/static/photo/shampik.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Печериці</div>
+              <div class="ingredient-price">19₴</div>
+            </div>
+            <div class="ingredient-card" data-category="extra" data-price="16">
+              <img
+                src="/static/photo/anans2.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Соковитий ананас</div>
+              <div class="ingredient-price">19₴</div>
+            </div>
+            <div class="ingredient-card" data-category="extra" data-price="16">
+              <img
+                src="/static/photo/kuka.jpg"
+                class="ingredient-image"
+              />
+              <div class="ingredient-name">Кукурудза</div>
+              <div class="ingredient-price">19₴</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Права частина -->
+      <div class="order-section">
+        <h2 class="order-title">Піца збери сам</h2>
+        <div class="order-details" id="selected-ingredients"></div>
+        <!-- Кнопка для выбора метода оплаты -->
+        <button class="payment-button" onclick="showPayment()">Вибрати метод оплати</button>
+        <!-- Блок для отображения выбранного метода оплаты -->
+        <div class="payment-method">
+          <span>Метод оплати:</span>
+          <span id="selected-payment-method">Не вибрано</span>
+        </div>
+        <div class="total-price">
+          <span>Загальна сума:</span>
+          <span id="total-price">0₴</span>
+        </div>
+        <button class="order-button">Замовити</button>
+      </div>
+    </div>
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <span class="close-btn">&times;</span>
+        <h2>Дані для доставки</h2>
+        <form id="deliveryForm">
+          <div class="form-group">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Адреса:</label>
+            <input type="text" id="address" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="comments">Коментар:</label>
+            <textarea id="comments"></textarea>
+          </div>
+          <button type="submit">Підтвердити замовлення</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-overlay" id="paymentOverlay">
+      <div class="modal">
+        <span class="close-btn" onclick="closePayment()">&times;</span>
+        <h2>Оплата замовлення</h2>
+        <div class="payment-methods">
+          <div class="method-card" onclick="selectMethod('card')">
+            <img src="/static/photo/credit-card-icon.png" alt="Карта">
+            <span>Оплата карткою</span>
+          </div>
+          <div class="method-card" onclick="selectMethod('cash')">
+            <img src="/static/photo/cash-icon.png" alt="Готівка">
+            <span>Готівкою при отриманні</span>
+          </div>
+        </div>
+    
+        <div id="cardForm" style="display: none;">
+          <form id="paymentForm">
+            <div class="form-group">
+              <label>Номер картки:</label>
+              <input type="text" id="cardNumber" placeholder="4242 4242 4242 4242" data-mask="0000 0000 0000 0000">
+            </div>
+            
+            <div class="row">
+              <div class="form-group">
+                <label>Термін дії:</label>
+                <input type="text" id="expiry" placeholder="MM/РР" data-mask="00/00">
+              </div>
+              <div class="form-group">
+                <label>CVV:</label>
+                <input type="text" id="cvv" placeholder="123" data-mask="000">
+              </div>
+            </div>
+    
+            <button type="submit" class="pay-button">Вибрати</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/combined.js"></script>
+  </body>
+</html>

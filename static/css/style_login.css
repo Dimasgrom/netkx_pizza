@@ -1,0 +1,450 @@
+/* style_login.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: 'Kantumruy', sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    padding: 15px 0;
+  }
+  
+  .header-burger {
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-burger:hover {
+    transform: scale(1.05);
+    background: transparent;
+  }
+  
+  .header-burger::before,
+  .header-burger::after,
+  .header-burger span {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+  }
+  
+  /* Анимация закрытия -> открытия */
+  .header-burger::before {
+    width: 24px;
+    top: 8px;
+    left: 8px;
+  }
+  
+  .header-burger::after {
+    width: 18px;
+    bottom: 8px;
+    left: 8px;
+  }
+  
+  .header-burger span {
+    width: 24px;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+  }
+  
+  .header-burger.active::before {
+    width: 24px;
+    transform: rotate(45deg) translate(6px, 6px);
+    top: 12px;
+    left: 8px;
+  }
+  
+  .header-burger.active::after {
+    width: 24px;
+    transform: rotate(-45deg) translate(6px, -6px);
+    bottom: 12px;
+    left: 8px;
+  }
+  
+  .header-burger.active span {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  
+  .logo img {
+    width: auto;
+    height: 100px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .header-main {
+    margin: 0 30px 0 -100px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .nav-menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .nav-menu li img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .login img,
+  .user-actions > img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-menu li span,
+  .login span {
+    color: black;
+    font-size: 32px;
+    font-family: "Kantumruy", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+
+/* Header Styles */
+header {
+    padding: 15px 0;
+    position: relative;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-menu img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Login Container */
+.login-container {
+    width: 630px;
+    height: 796px;
+    background: #D9D9D9;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    padding: 60px 133px;
+    position: relative;
+}
+
+.login-form img {
+    max-width: 362px;
+    height: 205px;
+    display: block;
+    margin: 0 auto 72px;
+    object-fit: cover;
+}
+
+/* Input Fields */
+.form-group {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.input-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.login-input {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 50px !important;
+    border: none;
+    background: transparent;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-logo-container {
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(to bottom, #fff 85%, rgba(255,255,255,0.8));
+}
+
+.main-logo {
+    height: 180px;
+    width: auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Контейнер формы */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 240px);
+    padding: 40px 20px;
+}
+
+.login-container {
+    background: #f8f9fa;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Поля ввода */
+.input-group {
+    margin: 40px 0;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+}
+
+.form-input {
+    width: 100%;
+    padding: 16px 16px 16px 55px;
+    font-size: 18px;
+    border: none;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.underline {
+    height: 2px;
+    background: #e63946;
+    width: 0;
+    transition: width 0.3s ease;
+    margin-top: 5px;
+}
+
+.form-input:focus ~ .underline {
+    width: 100%;
+}
+
+/* Кнопка и чекбокс */
+.form-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.remember-me input {
+    width: 18px;
+    height: 18px;
+    accent-color: #e63946;
+}
+
+.signin-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 16px 45px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
+}
+
+.signin-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 40px 25px;
+        margin: 20px;
+    }
+
+    .main-logo {
+        height: 140px;
+    }
+
+    .form-input {
+        font-size: 16px;
+        padding: 14px 14px 14px 50px;
+    }
+
+    .input-icon {
+        width: 24px;
+        height: 24px;
+        left: 12px;
+    }
+
+    .signin-btn {
+        padding: 14px 35px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .header-burger {
+        display: block;
+    }
+    
+    .login-container {
+        width: 90%;
+        height: auto;
+        padding: 30px 0;
+    }
+    
+    .login-form {
+        padding: 30px;
+    }
+    
+    .login-form img {
+        max-width: 250px;
+        height: auto;
+    }
+}
+
+/* Image Containment */
+.nav-item img,
+.cart-icon,
+.logo,
+.input-icon,
+.login-form img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-item,
+.form-group,
+.login-form > div {
+    position: relative;
+    overflow: hidden;
+}

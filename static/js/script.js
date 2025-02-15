@@ -36,3 +36,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.getElementById("pizza-bulder")?.addEventListener("click", () => {
+    window.location.href = "pizza_construkt.html";
+  });
+  
+document.getElementById("logo")?.addEventListener("click", () => {
+window.location.href = "index.html";
+});
+
+document.getElementById("login")?.addEventListener("click", () => {
+    window.location.href = "login.html";
+});
+
+document.getElementById("banerr")?.addEventListener("click", () => {
+    window.location.href = "pizza_construkt.html";
+    });
+    

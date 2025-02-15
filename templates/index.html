@@ -4,62 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nektx pizza</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/static/css/styles.css">
   </head>
   <body>
     <header>
       <nav class="nav">
         <div class="logo">
-            <img src="/photo/logo_pizza.png" alt="Логотип" />
+            <img id="logo" src="/static/photo/logo_pizza.png" alt="Логотип" />
         </div>
         <div class="header-main">
             <ul class="nav-menu">
                 <li>
-                    <img src="/photo/599995.png" alt="Піца" />
+                    <img src="/static/photo/599995.png" alt="Піца" />
                     <span>Піца</span>
                 </li>
                 <li>
-                    <img src="/photo/free-icon-cola-7491338.png" alt="Напої" />
+                    <img src="/static/photo/free-icon-cola-7491338.png" alt="Напої" />
                     <span>Напої</span>
                 </li>
                 <li>
-                    <img src="photo/free-icon-promotions-11477766.png" alt="Акції" />
+                    <img src="/static/photo/free-icon-promotions-11477766.png" alt="Акції" />
                     <span>Акції</span>
                 </li>
-                <li>
-                    <img src="photo/free-icon-pizza-99954.png" alt="Піца збери сам" />
+                <li id = "pizza-bulder">
+                    <img src="/static/photo/free-icon-pizza-99954.png" alt="Піца збери сам" />
                     <span>Піца збери сам</span>
                 </li>
             </ul>
-            <div class="login">
-                <img src="photo/free-icon-profile-1250689.png" alt="Увійти" />
-                <span>Увійти</span>
+            <div  class="login">
+                <img id= "login" src="/static/photo/free-icon-profile-1250689.png" alt="Увійти" />
+                <span id= "login" >Увійти</span>
             </div>
         </div>
         <div class="header-burger">
-            <span></span>
+            <span id = "pizza-bulder"></span>
         </div>
     </nav>
     </header>
     <main>
-      <div class="banner">
-        <img src="photo/Airbrush-Image-Enhancer.jpg" alt="Банер"/>
+      <div class="cart-sidebar">
+        <div class="cart-header">
+            <div class="cart-title">
+                <svg class="cart-icon" viewBox="0 0 24 24">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                <h3>Ваше замовлення</h3>
+            </div>
+            <button class="close-cart">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items">
+            <div class="empty-cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M22 9h-4.79l-4.38-6.56c-.19-.28-.51-.42-.83-.42s-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1zM12 4.8L14.8 9H9.2L12 4.8zM18.5 19l-12.99.01L3.31 11H20.7l-2.2 8zM12 13c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                <p>Кошик порожній</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="total">
+                <span>Всього:</span>
+                <div class="total-price">0 грн</div>
+            </div>
+            <button class="checkout-btn">
+                Оформити замовлення
+                <svg viewBox="0 0 24 24">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+      <div class="banner"  id="banerr">
+        <img src="/static/photo/Airbrush-Image-Enhancer.jpg" alt="Банер"/>
         <h2 class="banner_h2">Зроби свою піцу</h2>
         <p class="banner_p">Тільки в нас ти - зможешь зробити піцу своєї мрії</p>
         <button class="banner_button">Замовити</button>
       </div>
       <div class="pay">
-        <img src="photo/free-icon-picnic-basket-8451088.png" alt="Кошик" />
+        <img src="/static/photo/free-icon-picnic-basket-8451088.png" alt="Кошик" />
       </div>
       <section class="menu_pizza-menu">
         <div class="section-header">
-          <img src="photo/599995.png" alt="Піца" />
+          <img src="/static/photo/599995.png" alt="Піца" />
           <h2>Піца</h2>
         </div>
         <div class="menu-grid">
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-franciskana.png" alt="Францискана" />
+              <img src="/static/photo/0001-franciskana.png" alt="Францискана" />
             </div>
             <div class="item-details">
               <span class="item-weight">450 г</span>
@@ -77,7 +112,7 @@
           <div class="menu-item">
             <div class="item-image">
               <img
-                src="photo/0001-pica-z-grusheyu-ta-proshuto.png"
+                src="/static/photo/0001-pica-z-grusheyu-ta-proshuto.png"
                 alt="Піца з грушею та прошуто"
               />
             </div>
@@ -96,7 +131,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-garibaldi.png" alt="Гарібальді" />
+              <img src="/static/photo/0001-garibaldi.png" alt="Гарібальді" />
             </div>
             <div class="item-details">
               <span class="item-weight">420 г</span>
@@ -113,7 +148,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-pica-z-grusheyu-ta-sirom-dor-blyu.png" alt="Піца з грушею та сиром" />
+              <img src="/static/photo/0001-pica-z-grusheyu-ta-sirom-dor-blyu.png" alt="Піца з грушею та сиром" />
             </div>
             <div class="item-details">
               <span class="item-weight">480 г</span>
@@ -130,7 +165,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-don-peperon.png" alt="Don Peperon" />
+              <img src="/static/photo/0001-don-peperon.png" alt="Don Peperon" />
             </div>
             <div class="item-details">
               <span class="item-weight">430 г</span>
@@ -147,7 +182,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-pollo.png" alt="Pollo" />
+              <img src="/static/photo/0001-pollo.png" alt="Pollo" />
             </div>
             <div class="item-details">
               <span class="item-weight">450 г</span>
@@ -164,7 +199,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-gavajska.png" alt="Гавайська" />
+              <img src="/static/photo/0001-gavajska.png" alt="Гавайська" />
             </div>
             <div class="item-details">
               <span class="item-weight">450 г</span>
@@ -180,7 +215,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-kaprichoza.png" alt="Капричоза" />
+              <img src="/static/photo/0001-kaprichoza.png" alt="Капричоза" />
             </div>
             <div class="item-details">
               <span class="item-weight">410 г</span>
@@ -197,7 +232,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-5-siriv.png" alt="5 сирів" />
+              <img src="/static/photo/0001-5-siriv.png" alt="5 сирів" />
             </div>
             <div class="item-details">
               <span class="item-weight">410 г</span>
@@ -214,7 +249,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-pica-chilly.png" alt="Піца Chilly" />
+              <img src="/static/photo/0001-pica-chilly.png" alt="Піца Chilly" />
             </div>
             <div class="item-details">
               <span class="item-weight">470 г</span>
@@ -230,7 +265,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-cezare-verde.png" alt="Цезаре Верде" />
+              <img src="/static/photo/0001-cezare-verde.png" alt="Цезаре Верде" />
             </div>
             <div class="item-details">
               <span class="item-weight">480 г</span>
@@ -246,7 +281,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0001-bbq.png" alt="BBQ" />
+              <img src="/static/photo/0001-bbq.png" alt="BBQ" />
             </div>
             <div class="item-details">
               <span class="item-weight">530 г</span>
@@ -266,14 +301,14 @@
 
       <section class="menu_drinks-menu">
         <div class="section-header">
-          <img src="photo/free-icon-cola-7491338.png" alt="Напої" />
+          <img src="/static/photo/free-icon-cola-7491338.png" alt="Напої" />
           <h2>Напої</h2>
         </div>
         <div class="menu-grid">
           <div class="menu-item">
             <div class="item-image">
               <img
-                src="photo/0002-sik-tomatnij-sandora-095-dp.png"
+                src="/static/photo/0002-sik-tomatnij-sandora-095-dp.png"
                 alt="Сік томатний Sandora 0,95"
               />
             </div>
@@ -289,7 +324,7 @@
           <div class="menu-item">
             <div class="item-image">
               <img
-                src="photo/0002-sik-multivitamin-sandora-095-dp.png"
+                src="/static/photo/0002-sik-multivitamin-sandora-095-dp.png"
                 alt="Сік мультивітамін Sandora 0,95"
               />
             </div>
@@ -305,7 +340,7 @@
           <div class="menu-item">
             <div class="item-image">
               <img
-                src="photo/0002-sik-apelsinovij-sandora-095-dp.png"
+                src="/static/photo/0002-sik-apelsinovij-sandora-095-dp.png"
                 alt="Сік апельсиновий Sandora 0,95"
               />
             </div>
@@ -321,7 +356,7 @@
           <div class="menu-item">
             <div class="item-image">
               <img
-                src="photo/0002-sik-multivitamin-sandora-05-dp.png"
+                src="/static/photo/0002-sik-multivitamin-sandora-05-dp.png"
                 alt="Сік мультівітамін Sandora 0,5"
               />
             </div>
@@ -336,7 +371,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0002-pepsi-05-dp.png" alt="Пепсі 0,5" />
+              <img src="/static/photo/0002-pepsi-05-dp.png" alt="Пепсі 0,5" />
             </div>
             <div class="item-details">
               <span class="item-weight">500 г</span>
@@ -349,7 +384,7 @@
           </div>
           <div class="menu-item">
             <div class="item-image">
-              <img src="photo/0002-pepsi-blek-05-dp.png" alt="Пепсі Блек 0,5" />
+              <img src="/static/photo/0002-pepsi-blek-05-dp.png" alt="Пепсі Блек 0,5" />
             </div>
             <div class="item-details">
               <span class="item-weight">500 г</span>
@@ -363,7 +398,7 @@
           <div class="menu-item">
             <div class="item-image">
               <img
-                src="photo/0003-voda-bg-karpatska-dzh-05-dp (1).png"
+                src="/static/photo/0003-voda-bg-karpatska-dzh-05-dp (1).png"
                 alt="Вода б/г Карпатська Джерельна"
               />
             </div>
@@ -379,7 +414,7 @@
           <div class="menu-item">
             <div class="item-image">
               <img
-                src="photo/0003-voda-gaz-karpatska-dzh-05-dp (1).png"
+                src="/static/photo/0003-voda-gaz-karpatska-dzh-05-dp (1).png"
                 alt="Вода газ Карпатська Джерельна"
               />
             </div>
@@ -429,42 +464,7 @@
         </div>
     </footer>
     </main>
-    <div class="cart-sidebar">
-      <div class="cart-header">
-          <div class="cart-title">
-              <svg class="cart-icon" viewBox="0 0 24 24">
-                  <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-              </svg>
-              <h3>Ваше замовлення</h3>
-          </div>
-          <button class="close-cart">
-              <svg viewBox="0 0 24 24" width="24" height="24">
-                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-              </svg>
-          </button>
-      </div>
-      <div class="cart-items">
-          <div class="empty-cart">
-              <svg viewBox="0 0 24 24">
-                  <path d="M22 9h-4.79l-4.38-6.56c-.19-.28-.51-.42-.83-.42s-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1zM12 4.8L14.8 9H9.2L12 4.8zM18.5 19l-12.99.01L3.31 11H20.7l-2.2 8zM12 13c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
-              </svg>
-              <p>Кошик порожній</p>
-          </div>
-      </div>
-      <div class="cart-footer">
-          <div class="total">
-              <span>Всього:</span>
-              <div class="total-price">0 грн</div>
-          </div>
-          <button class="checkout-btn">
-              Оформити замовлення
-              <svg viewBox="0 0 24 24">
-                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-              </svg>
-          </button>
-      </div>
-  </div>
-    <script src="script.js"></script>
-    <script src="pay.js"></script>
+    <script src="/static/js/script.js"></script>
+    <script src="/static/js/pay.js"></script>
   </body>
 </html>
